@@ -13,9 +13,7 @@ try {
     // Connexion à la base de données avec PDO
     $conn = new PDO("mysql:host=$host;dbname=contact;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    if ( $conn) {
-        echo "Connexion Reuissi" ;
-    }
+
 
     // Vérifie si le formulaire a été soumis
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
