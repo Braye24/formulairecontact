@@ -31,7 +31,7 @@ try {
             ':email' => $email
         ]);
 
-        $message = "Données enregistrées avec succès !";
+        $message = "Données enregistrées avec succès $$";
         echo $message;
     }
 
